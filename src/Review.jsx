@@ -1,6 +1,6 @@
 import Path from 'path';
 import uploadFileToBlob, { isStorageConfigured } from './azure-storage-blob';
-import React, { Component, useState } from 'react';
+import React, {useState} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CardGroup, Card, Form, Accordion, Image } from "react-bootstrap";
 import review_video from "./images/practice-video1.png";

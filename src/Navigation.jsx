@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import {Dropdown} from "react-bootstrap";
 
 
 
 function Navigation(props) {
-  function search() {
+/*  function search() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("mySearch");
     filter = input.value.toUpperCase();
@@ -20,6 +20,7 @@ function Navigation(props) {
       }
     }
   }
+  */
 
   return (
     <div className="sidenav">
