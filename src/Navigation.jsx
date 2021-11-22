@@ -24,15 +24,13 @@ function Navigation(props) {
 
   return (
     <div className="sidenav">
-      <input type="text" id="mySearch" onkeyup="search()" placeholder="Search" title="Type in a category">
-        </input>
       <ul id="myMenu">
           <a href="/">Home</a>
           <a href="/find">Find A Session</a>
           <a href="/practice">Practice</a>
           <a href="/review">Review My Sessions</a>
           <a href="/instructors">Meet Instructors</a>
-          <a href="/about">About The Project</a>
+          <a href="https://simran18.github.io/stayfitstaysafe/">About The Project</a>
       </ul>
       <Dropdown>
         <Dropdown.Toggle variant="Warning" id="dropdown-basic"> Account

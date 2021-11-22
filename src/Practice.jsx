@@ -10,8 +10,10 @@ import foundation_data1 from "./images/foundations-data1.PNG";
 import foundation_data2 from "./images/foundation-data2.PNG";
 import fertility_data1 from "./images/fertility-data1.png";
 import fertility_data2 from "./images/fertility-data2.png";
+import DWChart from "react-datawrapper-chart";
 
 function CardDisplay() {
+  
   return (
     <CardGroup>
       <Card>
@@ -32,9 +34,8 @@ function CardDisplay() {
                 <li> Instructor: Pavel Dmitriev</li>
                 <li> Primary  health benefits  of this practice include (but are not limited to) helping with insomnia, sciatica, depression, asthma,  anxiety. </li>
                 <li> Main focus of this session is on the following muscle groups: Spine extender, deltoid, Glute muscles, Quadricepts, triceps. </li>
-                <Image src={connected_data2} rounded fluid/>
-                <Image src={connected_data1} rounded fluid/>
-              </ul>
+                <DWChart title="Map" src="https://datawrapper.dwcdn.net/7sbcj/1/" />
+             </ul>
             </Accordion.Body>
           </Accordion.Item>
 
@@ -106,7 +107,6 @@ function Practice() {
     <div>
       <div >
         <div >
-          
           <div >
             <h2 >Practice</h2>
             <p>

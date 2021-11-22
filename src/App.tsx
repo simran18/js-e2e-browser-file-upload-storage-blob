@@ -27,7 +27,7 @@ const App = (): JSX.Element => {
           <Route path="/practice" exact component={() => <Practice />} />
           <Route path="/review" exact component={() => <Review />} />
           <Route path="/instructors" exact component={() => <Instructors />} />
-          <Route path="/about" exact component={() => <About />} />
+          <a href="https://simran18.github.io/stayfitstaysafe/"> About </a>
         </Switch>
         <Footer />
       </Router>
