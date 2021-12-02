@@ -1,22 +1,48 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Card, CardGroup, Accordion, Image} from "react-bootstrap";
-import lynn_fertility from "./images/lynn-fertility.png";
-import foundation_pavel from "./images/foundation-pavel.png";
-import foundation_data1 from "./images/foundations-data1.PNG";
-import foundation_data2 from "./images/foundation-data2.PNG";
-import fertility_data1 from "./images/fertility-data1.png";
-import fertility_data2 from "./images/fertility-data2.png";
+import {Card, Accordion} from "react-bootstrap";
 import DWChart from "react-datawrapper-chart";
 import ReactPlayer from "react-player";
 
 function CardDisplay() {
   
   return (
-    <CardGroup>
-      <Card>
-       <div>
+    <div>
+      <Card >
+       <div className='player-wrapper'>
       <ReactPlayer
+        className='react-player'
+        url="https://www.youtube.com/embed/npMDGKAw0tU"
+      />
+    </div>
+        <Card.Body>
+          <Card.Title>Connected To The Sun </Card.Title>
+          <Card.Text>
+            Please join this beginner-level 90-minute yoga session with instructor Pavel to improve the state of your body and mind. 
+            {" "}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+        <Accordion defaultActiveKey="0" flush>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Find Out More</Accordion.Header>
+            <Accordion.Body>
+              <ul>
+                <li> Instructor: Pavel Dmitriev</li>
+                <li> Primary  health benefits  of this practice include (but are not limited to) helping with insomnia, sciatica, depression, asthma,  anxiety. </li>
+                <li> Main focus of this session is on the following muscle groups: Spine extender, deltoid, Glute muscles, Quadricepts, triceps. </li>
+                <DWChart title="Map" src="https://datawrapper.dwcdn.net/7sbcj/1/" />
+             </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+
+        </Accordion>
+        </Card.Footer>
+      </Card>
+      <Card>
+      <div className='player-wrapper'>
+      <ReactPlayer
+        className='react-player'
         url="https://www.youtube.com/embed/npMDGKAw0tU"
       />
     </div>
@@ -46,11 +72,17 @@ function CardDisplay() {
       </Card>
 
       <Card>
-        <Card.Img variant="top" src={lynn_fertility} />
+      <div className='player-wrapper'>
+      <ReactPlayer
+        className='react-player'
+        url="https://www.youtube.com/embed/npMDGKAw0tU"
+      />
+    </div>
         <Card.Body>
-          <Card.Title>Yoga for fertility</Card.Title>
+          <Card.Title>Connected To The Sun </Card.Title>
           <Card.Text>
-          Please join this beginner-level 65-minute yoga session with instructor Lynn to improve the state of your body  and mind. {" "}
+            Please join this beginner-level 90-minute yoga session with instructor Pavel to improve the state of your body and mind. 
+            {" "}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -58,41 +90,12 @@ function CardDisplay() {
           <Accordion.Item eventKey="1">
             <Accordion.Header>Find Out More</Accordion.Header>
             <Accordion.Body>
-            <ul>
-                <li> Instructor: Lynn Jensen</li>
-                <li> Primary  health benefits  of this practice include (but are not limited to) helping with anxiety, asthma, sciatica, insomnia, depression, calm, pregnancy.  </li>
-                <li> Main focus of this session is on the following muscle groups: Spine extender, Trapezius and Rhomboid, inner upper back, triceps,  deltoid, Glute muscles, Set of muscles to bend hip towards muscle, Quadricepts. </li>
-                <Image src={fertility_data1} rounded fluid/>
-                <Image src={fertility_data2} rounded fluid/>
-              </ul>
-            </Accordion.Body>
-          </Accordion.Item>
-
-        </Accordion>
-        </Card.Footer>
-      </Card>
-
-
-      <Card>
-        <Card.Img variant="top" src={foundation_pavel}  />
-        <Card.Body>
-          <Card.Title>Foundational Program</Card.Title>
-          <Card.Text>
-            Please join this beginner-level 73-minute yoga session with instructor Pavel to improve  the state of your body and mind. {" "}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-        <Accordion defaultActiveKey="0" flush>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Find Out More</Accordion.Header>
-            <Accordion.Body>
-            <ul>
+              <ul>
                 <li> Instructor: Pavel Dmitriev</li>
                 <li> Primary  health benefits  of this practice include (but are not limited to) helping with insomnia, sciatica, depression, asthma,  anxiety. </li>
-                <li> Main focus of this session is on the following muscle groups: Spine extender, Glute muscles, triceps, Trapezius and Rhomboid, inner upper back, Hamstrings. </li>
-                <Image src={foundation_data2} rounded fluid/>
-                <Image src={foundation_data1} rounded fluid/>
-              </ul>
+                <li> Main focus of this session is on the following muscle groups: Spine extender, deltoid, Glute muscles, Quadricepts, triceps. </li>
+                <DWChart title="Map" src="https://datawrapper.dwcdn.net/7sbcj/1/" />
+             </ul>
             </Accordion.Body>
           </Accordion.Item>
 
@@ -100,9 +103,8 @@ function CardDisplay() {
         </Card.Footer>
       </Card>
 
-  
 
-    </CardGroup>
+      </div>
     
   );
 }
