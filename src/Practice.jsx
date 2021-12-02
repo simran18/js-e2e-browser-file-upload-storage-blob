@@ -2,22 +2,24 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Card, CardGroup, Accordion, Image} from "react-bootstrap";
 import lynn_fertility from "./images/lynn-fertility.png";
-import connected_pavel from "./images/connected-pavel.png";
 import foundation_pavel from "./images/foundation-pavel.png";
-import connected_data1 from "./images/connected-sun-data1.png";
-import connected_data2 from "./images/connected-sun-image2.png";
 import foundation_data1 from "./images/foundations-data1.PNG";
 import foundation_data2 from "./images/foundation-data2.PNG";
 import fertility_data1 from "./images/fertility-data1.png";
 import fertility_data2 from "./images/fertility-data2.png";
 import DWChart from "react-datawrapper-chart";
+import ReactPlayer from "react-player";
 
 function CardDisplay() {
   
   return (
     <CardGroup>
       <Card>
-        <Card.Img variant="top" src={connected_pavel} />
+       <div>
+      <ReactPlayer
+        url="https://www.youtube.com/embed/npMDGKAw0tU"
+      />
+    </div>
         <Card.Body>
           <Card.Title>Connected To The Sun </Card.Title>
           <Card.Text>
@@ -70,6 +72,7 @@ function CardDisplay() {
         </Card.Footer>
       </Card>
 
+
       <Card>
         <Card.Img variant="top" src={foundation_pavel}  />
         <Card.Body>
@@ -97,7 +100,10 @@ function CardDisplay() {
         </Card.Footer>
       </Card>
 
+  
+
     </CardGroup>
+    
   );
 }
 

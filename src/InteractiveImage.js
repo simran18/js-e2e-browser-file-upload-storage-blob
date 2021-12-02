@@ -1,8 +1,6 @@
 import React, { PureComponent } from "react";
 
 import ImageMapper from "react-image-mapper";
-import _ from "lodash";
-import classNames from "classnames";
 
 //it do not resizes after window size click
 
@@ -366,7 +364,7 @@ export default class InteractiveImage extends PureComponent {
   };
 
   clickedOutside(evt){
-    let area = this.state.MAP.areas;
+
     let newareas = [
       {
         name: "clicked",
@@ -376,7 +374,7 @@ export default class InteractiveImage extends PureComponent {
         fillColor: "black"
       }
     ];
-    const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
+   
     let MAP = {
         name: this.state.MAP.name,
       areas: newareas
@@ -393,9 +391,9 @@ export default class InteractiveImage extends PureComponent {
   };
 
   render() {
-    const { innerWidth, innerHeight } = window;
-    const { URL, BUTTONS } = this.props;
-    const { info, width } = this.state;
+
+    const { URL } = this.props;
+
 
     return (
       <div>

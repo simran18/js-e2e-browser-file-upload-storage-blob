@@ -1,11 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Form, Row, Col, Button, Image } from 'react-bootstrap';
-import body_image from "./images/form-body-selection.png";
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import InteractiveImage from "./InteractiveImage";
 
 function Find() {
-    const [value, setValue] = React.useState(0);
+    const [setValue] = React.useState(0);
     
         const URL =
           "http://www.shapesense.com/images/blank-muscle-anatomy.jpg";
@@ -26,7 +25,7 @@ function Find() {
                             </Form.Label>
                             <Col>
                                 <Form.Range
-                                    value={value}
+                                    value={60}
                                     onChange={e => setValue(e.target.value)}
                                     tooltip='on'
                                 />
@@ -44,49 +43,33 @@ function Find() {
                     <Row>
                         <h6 class="text-primary"> Physical Health </h6>
                         <Col>
-                            <Form.Check label="Asthma" />
+
                             <Form.Check label="Back pain" />
-                            <Form.Check label="Carpal tunnel syndrome" />
-                        </Col>
-                        <Col>
+                            <Form.Check label="Balance" />
                             <Form.Check label="Digestion" />
-                            <Form.Check label="Fatigue" />
-                            <Form.Check label="Fitness" />
+                            <Form.Check label="Fitness-Strength" />
                         </Col>
                         <Col>
                             <Form.Check label="Flexibility" />
-                            <Form.Check label="Headaches" />
-                            <Form.Check label="High blood pressure" />
-                        </Col>
-                        <Col>
                             <Form.Check label="Insomnia" />
-                            <Form.Check label="Menopause" />
                             <Form.Check label="Menstruation" />
+                            
                         </Col>
                         <Col>
-                            <Form.Check label="Neck pain" />
-                            <Form.Check label="Osteoporosis" />
                             <Form.Check label="Pregnancy" />
-                        </Col>
-                        <Col>
-                            <Form.Check label="Balance" />
-                            <Form.Check label="Sciatica" />
                             <Form.Check label="Flat feet" />
+                            <Form.Check label="Core Strength" />
                         </Col>
                     </Row>
                     <Row>
                         <h6 class="text-primary"> Mental Health </h6>
-                        <Col>
-                            <Form.Check label="Anxiety" />
-                            <Form.Check label="Calm" />
-                            <Form.Check label="Confidence" />
-                            <Form.Check label="Depression" />
-
+                        <Col>                        
+                            <Form.Check label="Calming" />
+                            <Form.Check label="Energy" />
                         </Col>
                         <Col>
-                            <Form.Check label="Energy" />
-                            <Form.Check label="Stress" />
                             <Form.Check label="Focus" />
+                            <Form.Check label="Stress" />
                         </Col>
                         <Col></Col>
                         <Col> </Col>

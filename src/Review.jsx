@@ -1,14 +1,12 @@
-import Path from 'path';
-import uploadFileToBlob, { isStorageConfigured } from './azure-storage-blob';
-import React, {useState} from 'react';
+
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CardGroup, Card, Form, Accordion, Image } from "react-bootstrap";
+import { CardGroup, Card, Accordion, Image } from "react-bootstrap";
 import review_video from "./images/practice-video1.png";
 import connected_data1 from "./images/connected-sun-data1.png";
 import connected_data2 from "./images/connected-sun-image2.png";
 import foundation_pavel from "./images/foundation-pavel.png";
 
-const storageConfigured = isStorageConfigured();
 
 function Review() {
   function CardDisplay() {

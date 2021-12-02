@@ -1,4 +1,4 @@
-import logo from "./images/logo.gif";
+import logo from "./images/logo_2.gif";
 
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";

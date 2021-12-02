@@ -5,22 +5,6 @@ import {Dropdown} from "react-bootstrap";
 
 
 function Navigation(props) {
-/*  function search() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("mySearch");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myMenu");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
-  */
 
   return (
     <div className="sidenav">
@@ -28,8 +12,6 @@ function Navigation(props) {
           <a href="/">Home</a>
           <a href="/find">Find A Session</a>
           <a href="/practice">Practice</a>
-          <a href="/review">Review My Sessions</a>
-          <a href="/instructors">Meet Instructors</a>
           <a href="https://simran18.github.io/stayfitstaysafe/">About The Project</a>
       </ul>
       <Dropdown>
